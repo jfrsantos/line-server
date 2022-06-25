@@ -12,6 +12,7 @@ class LinesController < ApplicationController
     end
   end
 
+  # add file service through dependency injection
   def load_dependencies(file_service = FileService.new)
     @file_service ||= file_service
   end
